@@ -1,8 +1,11 @@
-const idadeDaPessoa = 17
-const temCNH = true
+let notaDoAluno = Number(prompt.question("Informe a nota do aluno:"));
 
-if (idadeDaPessoa >= 18 && temCNH) {
-  console.log ("Pode dirigir")
-} else {
-  console.log ("Não pode dirigir")
+let somaDasNotas = 0; //Acumulador
+
+while (notaDoAluno >= 0) {
+  somaDasNotas = somaDasNotas + notaDoAluno; //Incrementando o acumulador (somaDasNotas)
+
+  notaDoAluno = Number(prompt.question("Informe a próxima nota:"));
 }
+
+console.log(somaDasNotas);
